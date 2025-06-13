@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GolExpress</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #047857;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/86/Soccer_ball_icon.svg');
+      background-repeat: repeat;
+      background-size: 120px;
+      background-position: center;
+      opacity: 0.97;
+    }
+    .content {
+      background-color: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      padding: 2rem;
+      max-width: 700px;
+      margin: 2rem auto;
+    }
+  </style>
+</head>
+<body class="text-gray-900 font-sans">
+  <div class="content">
+    <h1 class="text-4xl font-extrabold mb-4 text-green-800 text-center">⚽️ GolExpress ⚽️</h1>
+    <p class="mb-6 text-xl text-center">Cada gol. Al instante en tu WhatsApp. Sin buscar, sin esperar. Solo goles. 🥅🔥</p>
+
+    <form class="space-y-6">
+      <div>
+        <label class="block text-sm font-medium">Nombre completo</label>
+        <input type="text" class="w-full mt-1 p-3 border border-green-300 rounded-xl" placeholder="Juan García">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Número de WhatsApp</label>
+        <input type="tel" class="w-full mt-1 p-3 border border-green-300 rounded-xl" placeholder="+34 600 123 456">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Equipo favorito</label>
+        <input type="text" class="w-full mt-1 p-3 border border-green-300 rounded-xl" placeholder="Real Madrid, FC Barcelona...">
+      </div>
+      <div class="flex items-start">
+        <input type="checkbox" class="mt-1 mr-2">
+        <label class="text-sm">Acepto recibir mensajes de WhatsApp de GolExpress.</label>
+      </div>
+      <button type="submit" class="w-full py-3 px-4 bg-green-600 text-white font-bold rounded-xl hover:bg-green-700">¡Quiero recibir los goles!</button>
+    </form>
+
+    <div class="mt-8">
+      <h2 class="text-2xl font-bold text-center mb-4">¿Qué recibirás?</h2>
+      <ul class="space-y-2 text-sm">
+        <li>🔥 Todos los goles de tu equipo</li>
+        <li>📲 Directamente a tu WhatsApp, al instante</li>
+        <li>👍 Sin complicaciones, solo resúmenes oficiales</li>
+      </ul>
+    </div>
+
+    <div class="mt-8 text-center">
+      <p class="text-sm">David López – Usuario de GolExpress</p>
+      <p class="font-bold text-green-800 text-lg">+7500 fans ya disfrutan de GolExpress</p>
+    </div>
+
+    <div class="mt-8">
+      <h3 class="text-lg font-semibold mb-2">Preguntas frecuentes</h3>
+      <ul class="text-sm space-y-1">
+        <li><strong>¿Qué equipos hay disponibles?</strong> Puedes seguir cualquier equipo de LaLiga. Próximamente más.</li>
+        <li><strong>¿Cuándo recibiré el vídeo?</strong> Justo después de cada partido, en cuanto esté disponible.</li>
+        <li><strong>¿Cómo puedo darme de baja?</strong> Fácil: responde "BAJA" y dejaremos de enviarte mensajes.</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
