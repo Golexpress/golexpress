@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GolExpress - Suscripción</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #016534;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .form-box {
+      background-color: white;
+      color: black;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 400px;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: 600;
+      margin-top: 10px;
+      display: block;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      background-color: #00A94F;
+      border: none;
+      font-size: 1rem;
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+    .checkbox input {
+      margin-right: 10px;
+    }
+    .checkbox a {
+      color: #016534;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-box">
+    <h1>Subscríbete a GolExpress</h1>
+    <form>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+
+      <label for="telefono">Número de WhatsApp</label>
+      <input type="tel" id="telefono" name="telefono" placeholder="Ej: +34 600 123 456" required>
+
+      <label for="equipo">Equipo preferido</label>
+      <select id="equipo" name="equipo" required>
+        <option value="">Selecciona tu equipo</option>
+        <option value="Alavés">Deportivo Alavés</option>
+        <option value="Almería">UD Almería</option>
+        <option value="Athletic">Athletic Club</option>
+        <option value="Atlético">Atlético de Madrid</option>
+        <option value="Barcelona">FC Barcelona</option>
+        <option value="Betis">Real Betis</option>
+        <option value="Cádiz">Cádiz CF</option>
+        <option value="Celta">RC Celta</option>
+        <option value="Getafe">Getafe CF</option>
+        <option value="Girona">Girona FC</option>
+        <option value="Granada">Granada CF</option>
+        <option value="LasPalmas">UD Las Palmas</option>
+        <option value="Mallorca">RCD Mallorca</option>
+        <option value="Osasuna">CA Osasuna</option>
+        <option value="Rayo">Rayo Vallecano</option>
+        <option value="RealMadrid">Real Madrid</option>
+        <option value="RealSociedad">Real Sociedad</option>
+        <option value="Sevilla">Sevilla FC</option>
+        <option value="Valencia">Valencia CF</option>
+        <option value="Villarreal">Villarreal CF</option>
+      </select>
+
+      <div class="checkbox">
+        <input type="checkbox" id="acepto" name="acepto" required>
+        <label for="acepto">He leído y acepto la <a href="politica-proteccion-dades.pdf" target="_blank">política de protección de datos</a>.</label>
+      </div>
+
+      <button type="submit">Quiero recibir los goles</button>
+    </form>
+  </div>
+</body>
+</html>
